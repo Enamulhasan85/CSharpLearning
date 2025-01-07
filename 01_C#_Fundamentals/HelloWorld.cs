@@ -1,6 +1,13 @@
 using System;
 
-class Hello
+namespace Fundamentals
 {
-    
+    class Hello
+    {
+        void hello()
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
 }
+

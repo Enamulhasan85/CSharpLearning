@@ -19,6 +19,7 @@ obj/
 .vscode/
 .idea/
 *.csproj.user
+.vs/
 
 # Ignore NuGet packages
 *.nupkg
