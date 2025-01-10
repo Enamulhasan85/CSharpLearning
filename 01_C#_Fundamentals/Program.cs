@@ -20,6 +20,10 @@ namespace Fundamentals
             arr.numbers = new int[3];
             arr.numbers[0] = 1;
             Console.WriteLine(arr.numbers[0]);
+
+            var path = @"F:\Works_Enamul_SEC\Docs\CodeSamurai\DemoProblem\problem.pdf";
+            var fileobj = new Files();
+            File.Delete(path);
         }
     }
 }
