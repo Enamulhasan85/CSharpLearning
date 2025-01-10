@@ -2,7 +2,8 @@ using System;
 
 namespace Fundamentals
 {
-    public class Order(){
+    public class Order
+    {
 
     }
 
