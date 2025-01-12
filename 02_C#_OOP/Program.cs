@@ -57,5 +57,12 @@ class Program
         dbMigrator = new DbMigrator(
             new FileLogger("Log\\log.txt"));
         dbMigrator.Migrate();
+
+        //Interface & Polymorphism
+        var encoder = new VideoEncoder();
+        encoder.RegisterNotificationChannel(new MailNotificationChannel());
+        encoder.RegisterNotificationChannel(new SmsNotificationChannel());
+        encoder.Encode(new Video());
+
     }
 }
