@@ -24,6 +24,14 @@ namespace Fundamentals
         }
     }
 
+    public class Triangle : Shape1
+    {
+        public override void Draw()
+        {
+            Console.WriteLine("Draw triangle");
+        }
+    }
+
     public class Shape1
     {
        

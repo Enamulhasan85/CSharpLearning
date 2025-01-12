@@ -45,6 +45,7 @@ class Program
         shapes.Add(new Shape1 { Width = 100, Height = 100});
         shapes.Add(new Circle1());
         shapes.Add(new Rectangle());
+        shapes.Add(new Triangle());
 
         var canvas = new Canvas();
         canvas.DrawShapes(shapes);
