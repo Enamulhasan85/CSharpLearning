@@ -33,5 +33,21 @@ class Program
         if(circle1 != null){
             circle1.Draw();
         }
+
+        //Boxing
+        int number = 10;
+        object obj = number;
+
+        //UnBoxing
+        number = (int) obj;
+
+        var shapes = new List<Shape1>();
+        shapes.Add(new Shape1 { Width = 100, Height = 100});
+        shapes.Add(new Circle1());
+        shapes.Add(new Rectangle());
+
+        var canvas = new Canvas();
+        canvas.DrawShapes(shapes);
+        
     }
 }
