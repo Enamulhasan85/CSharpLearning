@@ -50,5 +50,12 @@ class Program
         var canvas = new Canvas();
         canvas.DrawShapes(shapes);
         
+        //Extensibility Interface
+        var dbMigrator = new DbMigrator(new ConsoleLogger());
+        dbMigrator.Migrate();
+
+        dbMigrator = new DbMigrator(
+            new FileLogger("Log\\log.txt"));
+        dbMigrator.Migrate();
     }
 }
